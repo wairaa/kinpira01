@@ -21,7 +21,7 @@ def CV_init():
   
     #コーデック
     fourcc = cv2.VideoWriter_fourcc('m', 'p', '4', 'v')
-    img_name = "yasu{}.mp4".format(img_counter)
+    img_name = "webcame{}.mp4".format(img_counter)
     out = cv2.VideoWriter(img_name, fourcc, fps, (w, h))
     print("cv_init_fin")
     img_counter += 1
