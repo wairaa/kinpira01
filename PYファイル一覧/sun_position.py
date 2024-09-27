@@ -93,10 +93,16 @@ def houi(date,hour,minutes,keido,ido):
     else:
         west_east = "東"
     line ="{}より{}へ{}°".format(south_north,west_east,(abs(cosA)))
+   
+    return [south_north,west_east,(abs(cosA)),"高度は⇛",h]
     print(line)
     
-     
 #例文⇛houi('2020/6/1',12,0,139.77,35.68)    ⇛　　回答：真南より西へ20.21°
+if __name__ == '__main__':
+    houi('2020/6/22',12,0,139.77,35.68)
+    taiyoukoudo('2020/6/22',12,0,139.77,35.68)
+    
+houi('2020/6/22',12,0,139.77,35.68)
 
 
 
